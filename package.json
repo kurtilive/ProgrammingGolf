@@ -1,0 +1,11 @@
+{
+  "name": "golf-programming-web-app",
+  "version": "1.0.0",
+  "description": "Golf programming node js web application",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Students group brown",
+  "license": "ISC"
+}
