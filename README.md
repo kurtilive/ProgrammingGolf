@@ -8,7 +8,7 @@ Amazon Web service EC2 ubuntu
 
 Development:
 
-1. Connect for cloud: ssh -i aws\ ec2\ access/access_user.pem ubuntu@54.208.42.199
+1. Connect for cloud: ssh -i aws\ ec2\ access/AlexTsiganov.pem ubuntu@54.208.42.199
   user: ubuntu
 2. Run NodeJS web server with npm: npm install | npm start (TODO://replace with script)
   before: 'export NODE_ENV=development'
@@ -16,6 +16,7 @@ Development:
   Running web server in the background:
 
 TODO:// npm install -> https://github.com/foreverjs/forever
+            debug   -> https://github.com/visionmedia/debug
 
 sudo PORT=80 DEBUG=golf-app:* npm start
 

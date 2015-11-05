@@ -1,5 +1,8 @@
 extends layout
 
 block content
-  h1= title
+  h1 Golf Programming
   p Welcome to #{title}
+  ul
+  each task in tasks
+    ol: a('/' href=task.id) #{task.id} : #{task.title} lang -> #{task.lang}
