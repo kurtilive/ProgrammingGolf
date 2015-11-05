@@ -17,7 +17,7 @@ Development:
 
 TODO:// npm install -> https://github.com/foreverjs/forever
 
-sudo  PORT=80 DEBUG=golf-app:* npm start
+sudo PORT=80 DEBUG=golf-app:* npm start
 
 sudo PORT=80 nodejs bin/www
 

@@ -14,6 +14,9 @@ var http = require('http');
 
 var port = normalizePort(process.env.PORT || app.get('PORT') || '3000');
 
+if (app.get('env') === 'development') {
+  port = 80;
+}
 
 app.set('port', port);
 
