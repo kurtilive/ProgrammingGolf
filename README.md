@@ -6,14 +6,14 @@ Amazon Web service EC2 ubuntu
 
   Ports: http -> 80, 9000
 
-  ## Instructions for start local
+## Instructions for start local
 
-  If you would like to download the code and try it for yourself:
+If you would like to download the code and try it for yourself:
 
-  1. Clone the repo: `git clone https://github.com/AlexTsiganov/GolfProgrammingWebApp.git`
-  2. Install packages: `npm install`
-  3. Launch: `npm start` or `DEBUG=all npm start` wih logs
-  4. Visit in your browser at: `http://localhost:3000`
+1. Clone the repo: `git clone https://github.com/AlexTsiganov/GolfProgrammingWebApp.git`
+2. Install packages: `npm install`
+3. Launch: `npm start` or `DEBUG=all npm start` wih logs
+4. Visit in your browser at: `http://localhost:3000`
 
 Development:
 
