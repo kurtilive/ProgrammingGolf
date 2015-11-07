@@ -1,8 +1,15 @@
 extends layout
 
 block content
-  h1 Golf Programming
-  p Welcome to #{title}
-  ul
-  each task in tasks
-    ol: a('/' href=task.id) #{task.id} : #{task.title} lang -> #{task.lang}
+
+  table(class='table table-striped table-hover')
+   thead: tr
+     th №
+     th Задание
+     th Автор
+   tbody
+     each task in tasks
+       tr
+        td #{task.id}
+        td: a(href=task.id) #{task.title}
+        td #{task.author}

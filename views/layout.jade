@@ -3,5 +3,19 @@ html
   head
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js')
+    script(src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js')
   body
-    block content
+
+    nav(class='navbar navbar-default')
+      div(class='container-fluid')
+        div(class='navbar-header')
+          a(class='navbar-brand' href='/') Golf Programming
+        ul(class='nav navbar-nav navbar-right')
+          li: a(href='#')
+              span(class='glyphicon glyphicon-user') Регистрация
+          li: a(href='#')
+              span(class='glyphicon glyphicon-log-in') Логин
+
+  block content
