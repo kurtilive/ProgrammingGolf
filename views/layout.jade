@@ -8,14 +8,18 @@ html
     script(src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js')
   body
 
-    nav(class='navbar navbar-default')
-      div(class='container-fluid')
-        div(class='navbar-header')
-          a(class='navbar-brand' href='/') Golf Programming
+    nav.navbar.navbar-default
+      div.container-fluid
+        div.navbar-header
+          a.navbar-brand(href='/') Golf Programming
+        ul.nav.navbar-nav
+          li: a(href='#') Топ пользователей
+          li: a(href='#') Контакты
+        button.btn.btn-primary.navbar-btn(type="button") Моя кнопка
         ul(class='nav navbar-nav navbar-right')
           li: a(href='#')
               span(class='glyphicon glyphicon-user') Регистрация
-          li: a(href='#')
-              span(class='glyphicon glyphicon-log-in') Логин
+          li: a(href='/login')
+              span.glyphicon.glyphicon-log-in Логин
 
   block content
