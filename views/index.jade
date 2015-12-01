@@ -6,10 +6,10 @@ block content
    thead: tr
      th №
      th Задание
-     th Автор
+     th Описание
    tbody
      each task in tasks
        tr
-        td #{task.id}
-        td: a(href=task.href) #{task.title}
-        td #{task.author}
+        td #{task.ID_TASK}
+        td: a(href=task.href) #{task.TASKNAME}
+        td #{task.TEXT}

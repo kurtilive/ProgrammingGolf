@@ -7,7 +7,11 @@ var bodyParser = require('body-parser');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
+var langs = require('./routes/langs');
 var login = require('./routes/login');
+var http = require('http');
+var mysql = require('mysql');
+var utf8 = require('utf8');
 
 var app = express();
 
@@ -25,6 +29,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
 app.use('/users', users);
+app.use('/langs',langs)
 app.use('/login', login);
 
 // catch 404 and forward to error handler
@@ -51,6 +56,7 @@ if (app.get('env') === 'development') {
 // production error handler
 // no stacktraces leaked to user
 app.use(function(err, req, res, next) {
+  res.writeHead(200, {'Content-Type': 'text/html; charset=UTF-8'});
   res.status(err.status || 500);
   res.render('error', {
     message: err.message,

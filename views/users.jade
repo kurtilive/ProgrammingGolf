@@ -1,0 +1,21 @@
+extends layout
+
+block content
+
+    table.table.table-striped.table-hover
+        thead: tr
+            th ID
+            th SECONDNAME
+            th FIRSTNAME
+            th POINTS
+        tbody
+            each user in users
+                tr
+                    td #{user.ID_USER}
+                    td: a(href=user.href) #{user.SECONDNAME}
+                    td #{user.FIRSTNAME}
+                    td #{user.SUMPOINTS}
+
+
+
+
