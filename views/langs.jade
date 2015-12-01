@@ -1,0 +1,16 @@
+extends layout
+
+block content
+
+    table.table.table-striped.table-hover
+        thead: tr
+            th №
+            th NAME
+            th VERSION
+        tbody
+            each lang in langs
+                tr
+                    td #{lang.ID_PROGRAM_LANGUAGE}
+                    td: a(href=lang.href) #{lang.LANGUAGE_NAME}
+                    td #{lang.VERSION}
+
